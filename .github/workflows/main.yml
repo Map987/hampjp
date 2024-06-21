@@ -38,7 +38,7 @@ jobs:
           git pull
            
           
-          git reset --mixed master
+          git reset --mixed main
           git add .
           git commit -m "Github action update at `date '+%Y-%m-%d %H:%M:%S'`."
           git push
