@@ -62,6 +62,6 @@ for a_tag in a_tags:
         # 处理图片链接
         processed_url = process_image_url(img_url)
         processed_url = base_url + processed_url
-        processed_url = quote(processed_url)
+        
         # 下载图片
         download_image(processed_url, save_folder, txt_file)
