@@ -54,11 +54,14 @@ a_tags = soup.find_all('a', href=re.compile(r'https://www\.hakuhodody-map\.jp/li
 
 # 遍历所有a标签
 for a_tag in a_tags:
+    base_url = https://hakuhodody.map.jp
     # 获取图片链接
     img_tag = a_tag.find('img')
     if img_tag:
         img_url = img_tag.get('src')
         # 处理图片链接
         processed_url = process_image_url(img_url)
+        processed_url = base_url + processed_url
+        processed_url = quote(processed_url)
         # 下载图片
         download_image(processed_url, save_folder, txt_file)
