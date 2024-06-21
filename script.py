@@ -2,7 +2,7 @@ import os
 import re
 import requests
 from bs4 import BeautifulSoup
-
+from urllib.parse import quote
 # 网站URL
 url = 'https://www.hakuhodody-map.jp/animation/'
 
