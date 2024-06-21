@@ -3,6 +3,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import quote
+from datetime import datetime
 # 网站URL
 url = 'https://www.hakuhodody-map.jp/animation/'
 
